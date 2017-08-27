@@ -19,7 +19,11 @@
             <p-dataTable [value]="pessoas" [paginator] = "true" [rows] = "4"
               [responsive] = "true">
               <p-column field="nome" header="Nome"></p-column>
-              <p-column field="dataNascimento" header="Nascimento" styleClass="col-data"></p-column>
+              <p-column header="Nascimento" styleClass="col-data">
+                  <ng-template let-pes="rowData" pTemplate="body">
+                    <span>{{pes.dataNascimento | date: 'dd/MM/y'}}</span>
+                  </ng-template>
+              </p-column>
               <p-column field="cidade" header="Cidade"></p-column>
               <p-column field="estado" header="Estado"></p-column>
               <p-column field="status" header="Status">
