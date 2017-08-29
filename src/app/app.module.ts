@@ -11,6 +11,7 @@ import { CalendarModule } from 'primeng/components/calendar/calendar';
 import { SelectButtonModule } from 'primeng/components/selectbutton/selectbutton';
 import { DropdownModule } from 'primeng/components/dropdown/dropdown';
 
+// tslint:disable-next-line:quotemark
 import { CurrencyMaskModule } from "ng2-currency-mask";
 
 import { AppComponent } from './app.component';
