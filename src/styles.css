@@ -48,3 +48,7 @@ textarea {
 a:hover, a:focus {
   text-decoration: underline;
 }
+
+.ui-dropdown-filter-container{
+  width: 100%;
+}
