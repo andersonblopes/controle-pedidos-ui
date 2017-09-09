@@ -11,7 +11,7 @@ import { InputTextareaModule } from 'primeng/components/inputtextarea/inputtexta
 import { CalendarModule } from 'primeng/components/calendar/calendar';
 import { SelectButtonModule } from 'primeng/components/selectbutton/selectbutton';
 import { DropdownModule } from 'primeng/components/dropdown/dropdown';
-import {InputMaskModule} from 'primeng/components/inputMask/inputMask';
+import { InputMaskModule } from 'primeng/components/inputMask/inputMask';
 
 // tslint:disable-next-line:quotemark
 import { CurrencyMaskModule } from "ng2-currency-mask";
@@ -23,6 +23,8 @@ import { PessoaPesquisaComponent } from './pessoa-pesquisa/pessoa-pesquisa.compo
 import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
 import { MessageComponent } from './message/message.component';
+import { LancamentosGridComponent } from './lancamentos-grid/lancamentos-grid.component';
+import { PessoasGridComponent } from './pessoas-grid/pessoas-grid.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { MessageComponent } from './message/message.component';
     PessoaPesquisaComponent,
     LancamentoCadastroComponent,
     PessoaCadastroComponent,
-    MessageComponent
+    MessageComponent,
+    LancamentosGridComponent,
+    PessoasGridComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +53,7 @@ import { MessageComponent } from './message/message.component';
     DropdownModule,
     InputMaskModule,
     CurrencyMaskModule
-    ],
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
